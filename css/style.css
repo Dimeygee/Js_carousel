@@ -1,0 +1,99 @@
+*,::before,::after{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+#wrapper{
+    position:relative;
+    max-width:500px;
+    width:100%;
+    height:80vh;
+    background-color:lightgrey;
+    margin:10vh auto;
+}
+
+.img-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    opacity:0;
+    transition:opacity 0.5s ease-in-out;
+    overflow-y:hidden;
+}
+
+.img-container .content{
+    max-width:400px;
+    width:100%;
+    background-color:rgba(0,0,0,0.2);
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.img-container .content p{
+    margin-top:0.5em;
+}
+
+.arrow_right{
+    display:block;
+    position:absolute;
+    top:50%;
+    right:5%;
+    width:50px;
+    height:50px;
+    z-index:3;
+    border-radius:50%;
+    cursor:pointer;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.arrow_left{
+    background-color:rgba(0,0,0,0.5);
+    display:block;
+    position:absolute;
+    top:50%;
+    left:5%;
+    width:50px;
+    height:50px;
+    z-index:3;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.one,.two,.three,.four,.five,.six{
+    background-image:url(../image/image_1.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.two{
+    background-image:url(../image/image_5.jpg);
+}
+
+.three{
+    background-image:url(../image/image_6.jpg);
+}
+
+.four{
+    background-image:url(../image/work-4.jpg);
+}
+
+.five{
+    background-image:url(../image/work-5.jpg);
+}
+
+.six{
+    background-image:url(../image/work-6.jpg);
+}
+
+.current{
+    opacity:1;
+}
+
+
+
